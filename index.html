@@ -131,9 +131,10 @@
 
         // update video
         video.pause();
+        video.currentTime = 0;
         source.src = data.video;
         video.load();
-        video.preload() = "metadata";
+        video.preload = "metadata";
 
         video.muted = true;
         video.playsInline = true;
